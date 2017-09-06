@@ -34,9 +34,15 @@ optional arguments:
 ## Example:
 
 ```
+json format:
 python vault_search.py -v test_vault.yml -p test1234 -q database.postgres.host.d1.password
 
 {"password": "xyz123"}
+
+raw format:
+python vault_search.py -v test_vault.yml -p test1234 -q database.postgres.host.d1.password -r
+
+xyz123
 ```
 
 ## Limitations:
